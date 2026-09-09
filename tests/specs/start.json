@@ -1,16 +1,1 @@
-[
-  {
-    "name": "/start replies with the welcome + main menu",
-    "steps": [
-      {
-        "send": { "text": "/start" },
-        "expect": [
-          {
-            "method": "sendMessage",
-            "payload": { "text": "👋 Welcome! Tap a button below to get started." }
-          }
-        ]
-      }
-    ]
-  }
-]
+[{"name":"شروع و منو","steps":[{"send":{"text":"/start"},"expect":[{"method":"sendMessage","payload":{"text":"به دعايفای خوش آمدی. هر روز یک دعای کوتاه بخوان؛ از دسته‌ها بگرد، علاقه‌هایت را نگه دار و اگر خواستی یادآوری بگذار."}}]}]}]

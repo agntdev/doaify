@@ -1,4 +1,6 @@
 import { Composer } from "grammy";
+import type { Ctx } from "../bot.js";
+import { sendDua, today as daily } from "../doaify.js";
 
 // SCAFFOLD — generated from the bot blueprint BEFORE the agent runs.
 // Keep a LIVE registration (.command / .callbackQuery / …) so this feature is
@@ -6,10 +8,10 @@ import { Composer } from "grammy";
 // change the user-facing text, update tests/specs to match EXACTLY.
 // Do NOT rewrite src/bot.ts — buildBot() already auto-loads this module.
 
-const composer = new Composer();
+const composer = new Composer<Ctx>();
 
 composer.command("today", async (ctx) => {
-  await ctx.reply("Send Today’s Dua immediately");
+  await sendDua(ctx, daily(ctx));
 });
 
 export default composer;
