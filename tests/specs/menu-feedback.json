@@ -1,0 +1,20 @@
+[
+  {
+    "name": "بازخورد",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Open the quick feedback form to send a message to admin"
+            }
+          }
+        ],
+        "send": {
+          "callback": "menu:feedback"
+        }
+      }
+    ]
+  }
+]
