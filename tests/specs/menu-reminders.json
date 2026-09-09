@@ -1,0 +1,20 @@
+[
+  {
+    "name": "یادآوری",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Open the reminder setup flow (set time or turn off)"
+            }
+          }
+        ],
+        "send": {
+          "callback": "menu:reminders"
+        }
+      }
+    ]
+  }
+]
